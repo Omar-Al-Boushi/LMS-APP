@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع تخرج - تصميم وتطوير تطبيق LMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            direction: rtl;
+        }
+
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-weight: 600;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            background-color: #A18F5A;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li:hover {
+            background-color: #d1a365;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #006d77;
+            font-weight: 600;
+        }
+
+        .content-section {
+            display: none;
+            /* Hide sections by default */
+            background: #ffffff;
+            margin: 27.5px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section.active {
+            display: block;
+            /* Display active section */
+        }
+
+        .phase {
+            margin: 10px;
+            padding: 10px;
+            line-height: 3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        ul li {
+            background: #edf6f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #005f73;
+            color: white;
+            width: 100%;
+        }
+
+        p {
+            line-height: 2.5;
+            font-size: 18px;
+
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                text-align: right;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>مشروع تخرج: تصميم وتطوير تطبيق LMS</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">نظرة عامة</a></li>
+                <li><a href="#phases">الأهداف</a></li>
+                <li><a href="#tools">الأدوات</a></li>
+                <li><a href="#skills">تفاصيل</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview" class="content-section active">
+            <h2>نظرة عامة</h2>
+            <p>
+                يهدف المشروع إلى تطوير تطبيق لنظام إدارة التعلم (LMS) خاص بالجامعة الافتراضية السورية، حيث إن النظام
+                الحالي متاح عبر الويب فقط ويعاني من التصميم القديم وغياب الاستجابة السريعة للأجهزة المحمولة وعدم مراعاة
+                تجربة المستخدم بالشكل الأمثل. يهدف المشروع الى تقديم تطبيق آندرويد بتجربة مستخدم محسنة وعصرية تشمل جميع
+                المستخدمين من <strong>طلاب - أساتذة - منسقين - ومديرين ، </strong> مع التركيز في المرحلة الأولى على قسم
+                الطلاب.
+            </p>
+        </section>
+
+        <section id="phases" class="content-section">
+            <h2>الأهداف</h2>
+            <div class="phase">
+                <ul>
+                    <li>تقديم تطبيق مخصص وسهل الاستخدام على الأجهزة المحمولة للارتقاء بتجربة مستخدم LMS</li>
+                    <li>تحسين الوصول والتنقل بواجهات متكاملة تدعم جميع المستخدمين (طلاب، أساتذة، منسقون، ومديرون)</li>
+                    <li>توسيع ميزات النظام الأساسي لإضافة وظائف جديدة تخدم احتياجات الطلاب التعليمية</li>
+                    <li>تمكين الطلاب من متابعة تقدمهم الأكاديمي عبر عرض بيانات محدثة وسهلة التصفح</li>
+                    <li>دعم إدارة المهام الأكاديمية بتسهيل رفع الوظائف واستلامها إلكترونيًا بواجهة مريحة</li>
+                    <li>إتاحة الوصول السريع إلى الموارد التعليمية وتنظيمها بطرق مرنة وعصرية</li>
+                    <li>تحسين التفاعل بين الطلاب وأعضاء الهيئة التعليمية عبر ميزات التواصل الفوري</li>
+                    <li>توفير التنبيهات الفورية للأحداث والمهام الأكاديمية القادمة لتعزيز الالتزام الأكاديمي</li>
+                    <li>دعم تخصيص تجربة المستخدم بإضافة ميزات مثل الوضع الليلي وتخصيص الإشعارات</li>
+                    <li>تطوير ميزات المجتمع لدعم النقاشات الأكاديمية ومشاركة الموارد بين الطلاب</li>
+                    <li>تسهيل الوصول إلى ملفات وبيانات الجامعة الأخرى المرتبطة بمسيرة الطالب</li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section id="tools" class="content-section">
+            <h2>الأدوات التي سيتم العمل عليها</h2>
+            <div class="phase">
+                <ul>
+                    <li>Android Studio</li>
+                    <li>Kotlin</li>
+                    <li>Jetpack Compose</li>
+                    <li>Room</li>
+                    <li>Figma</li>
+                    <li>GitHub</li>
+                </ul>
+                <br>
+                <hr><br>
+                <h2>خيار آخر</h2>
+                <ul>
+                    <li>VSCode</li>
+                    <li>Dart/Flutter</li>
+                    <li>SQLite</li>
+                    <li>Figma</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="skills" class="content-section">
+            <h2>تحليل النظام من جهة (الطلاب)</h2>
+            <div class="phase">
+
+                <ul>
+                    <li>صفحة البداية شعار التطبيق مع انيمشين يغير لون الشعار 4 مرات
+                    </li>
+                    <li>صفحة الترحيب تتضمن سلايدر يحتوي صور يمكن الاتنقال بينها بالسحب وبأسفل السلايدر زر Get Started
+                    </li>
+                    <li>صفحة اختيار اللغة المفضلة (عربي - انجليزي)
+                    </li>
+                    <li>صفحة اختيار النمط المفضل (فاتح - داكن)
+                    </li>
+                    <li>صفحة تسجيل الدخول (شعار التطبيق - اسم المستخدم - كلمة السر - زر Sign in - زر Rembere me)
+                    </li>
+                    <li>الصفحة الرئيسة للتطبيق Dashboard تتضمن معلومات عن تفاصيل الكورسات (عدد المقررات الناجح بها
+                        الطالب -
+                        عدد المقررات المسجل عليها الطالب هذا الفصل - عدد المقررات المتبقية للطالب حتى التخرج - نسبة
+                        مئوية
+                        لإنجاز الطالب للمقررات - نسبة مئوية للمواد المتبقية على الطالب) ومعلومات عن وظائف الطالب (عدد
+                        الوظائف المطلوب من الطالب لحد الآن - نسبة الوظائف المكتلمة - الوظائف المتبقية والتي لم تكتمل -
+                        عدد
+                        الأيام المتبقية لتسليم الوظائف حسب أقل مدة)
+                    </li>
+                    <li>صفحة الكورسات تتضمن جميع الكورسات الخاصة بالبرنامج المسجل عليه الطالب مع أزرار للفلترة (مكتمل -
+                        مسجل
+                        - متبقي) مع تغير طريقة العرض من Card الى List مع زر خاص بالبحث
+                    </li>
+                    <li>صفحة الوظائف تتضمن الوظائف بشكل بطاقات تضم اسم الكورس ورمزه وتاريخ بداية الوظيفة وتاريخ نهاية
+                        الوظيفة وزر اظهار التفاصيل) مع زر فلترة (جاري - متكمل) وزر فرز (First End - First Start) مع زر
+                        بحث
+                    </li>
+                    <li>وأيضاً صفحة خاصة المراسلة تتضمن الرسائل بشكل عام (سيتم استبدالها بصفحة المجتمع)
+                    </li>
+                </ul>
+                <br>
+                <hr>
+                <br>
+                <h2>الصفحات الإضافية</h2>
+                <ul>
+                    <li>صفحة كل مقرر
+                    </li>
+                    <li>صفحة ملفات المقرر PDF
+                    </li>
+                    <li>صفحة اختبار وتقدير المقرر Q/A
+                    </li>
+                    <li>صفحة تفاصيل الوظيفة ورفع الوظيفة
+                    </li>
+                    <li>صفحة المراسلة أو صفحة المجتمع
+                    </li>
+                    <li>صفحة الملفات الشخصية للأعضاء الآخرين
+                    </li>
+                    <li>صفحة الملف الشخصي الخاص بالمستخدم
+                    </li>
+                    <li>صفحة الإعدادت
+                    </li>
+                    <li>صفحة حول التطبيق
+                    </li>
+                    <li>صفحة الإشعارات
+                    </li>
+                    <li>صفحة المنتسبين للمقرر
+                    </li>
+                    <li>صفحة التقويم
+                    </li>
+                    <li>صفحات الكورسات الشاملة</li>
+                    <li>وصفحات أخرى ستتبلور اثناء التصميم</li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 مشروع التخرج - جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // إظهار القسم الأول عند تحميل الصفحة
+        document.querySelectorAll('.content-section').forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById('overview').classList.add('active');
+
+        // إضافة الأحداث لكل رابط
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // جلب معرف القسم المطلوب
+                const targetID = this.getAttribute('href').substring(1);
+
+                // إخفاء كل الأقسام
+                document.querySelectorAll('.content-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // إظهار القسم المطلوب
+                document.getElementById(targetID).classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
