@@ -33,19 +33,21 @@
             margin-bottom: 10px;
             font-weight: 600;
             padding: 20px;
+            font-size: 1.8em;
         }
 
         nav ul {
             list-style: none;
-            padding: 20px;
+            padding: 0;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         nav ul li {
-            margin: 0 15px;
+            margin: 5px;
             background-color: #A18F5A;
-            padding: 10px;
+            padding: 10px 15px;
             border-radius: 5px;
         }
 
@@ -63,6 +65,7 @@
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
+            padding-bottom: 60px;
         }
 
         h2 {
@@ -73,23 +76,23 @@
 
         .content-section {
             display: none;
-            /* Hide sections by default */
             background: #ffffff;
-            margin: 27.5px 0;
-            padding: 20px;
+            margin: 20px 0;
+            padding: 15px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 70px;
+
         }
 
         .content-section.active {
             display: block;
-            /* Display active section */
         }
 
         .phase {
-            margin: 10px;
+            margin: 10px 0;
             padding: 10px;
-            line-height: 3;
+            line-height: 2;
         }
 
         ul {
@@ -101,37 +104,79 @@
 
         ul li {
             background: #edf6f9;
-            margin: 5px 0;
-            padding: 10px;
+            margin: 8px 0;
+            padding: 16px;
             border-radius: 5px;
         }
 
         footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
             text-align: center;
             padding: 20px;
             background-color: #005f73;
             color: white;
-            width: 100%;
+            z-index: 1000;
         }
 
         p {
-            line-height: 2.5;
+            line-height: 2.8;
             font-size: 18px;
-
         }
 
         @media screen and (max-width: 768px) {
             header {
-                text-align: right;
+                text-align: center;
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+                padding: 10px;
             }
 
             nav ul {
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
             }
 
             nav ul li {
                 margin-bottom: 10px;
+                padding: 10px 12px;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            p,
+            ul li {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 1.3em;
+            }
+
+            nav ul li {
+                padding: 8px 10px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            p,
+            ul li {
+                font-size: 14px;
             }
         }
     </style>
